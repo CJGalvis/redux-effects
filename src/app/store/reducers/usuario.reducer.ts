@@ -24,6 +24,7 @@ const _usuarioReducer = createReducer(
     loading: true,
     loaded: false,
     id,
+    usuario: null,
   })),
   on(actions.deleteUser, (state) => ({
     ...state,

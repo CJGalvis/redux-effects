@@ -10,7 +10,7 @@ export class UsuariosService {
   constructor(private http: HttpClient) {}
 
   getUsers() {
-    const url = `${this.base_url}/users?per_page=6&delay=5`;
+    const url = `${this.base_url}/users?delay=5`;
     return this.http.get(url).pipe(map((res: any) => res.data));
   }
 
